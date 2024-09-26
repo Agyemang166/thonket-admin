@@ -6,6 +6,7 @@ import Product from "./pages/Product/Product";
 import Orders from './pages/Orders/Orders';
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Customers from "./pages/Customers/Customers";
+import Tracking from "./pages/Trucks/Tracking";
 
 const App = () => {
   const [isSidebarVisible, setSidebarVisible] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
             <Route path="/order" element={<Orders />} />
             <Route path="/products" element={<Product />} />
             <Route path="/customers" element={<Customers />} />
+            <Route path="/truck-system" element={<Tracking />} />
           </Routes>
           {/* Other components or content go here */}
         </div>

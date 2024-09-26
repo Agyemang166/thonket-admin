@@ -1,6 +1,7 @@
 import React from 'react';
 import { Button } from '@mui/material';
 import { AiOutlineHome, AiOutlineShoppingCart, AiOutlineUser } from 'react-icons/ai';
+import { FaTruck } from "react-icons/fa";
 import { GiCardboardBox } from 'react-icons/gi';
 import { Link } from 'react-router-dom';
 import { MdClose } from 'react-icons/md';
@@ -46,6 +47,11 @@ export const SidebarComponent = ({ isVisible, toggleSidebar }) => {
             <Link to="/customers" onClick={toggleSidebar} className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-primary mb-2">
               <AiOutlineUser className="h-4 w-4" />
               Customers
+            </Link>
+            {/* Customers Link */}
+            <Link to="/truck-system" onClick={toggleSidebar} className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-primary mb-2">
+              <FaTruck  className="h-4 w-4" />
+              Track System
             </Link>
           </nav>
         </div>
