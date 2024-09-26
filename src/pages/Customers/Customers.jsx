@@ -4,7 +4,6 @@ import React from "react";
 import { Badge } from "@mui/material"; // Material UI
 import { Card, CardContent, CardHeader, Typography } from "@mui/material"; // Material UI
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap
-import classNames from "classnames"; // For conditional class names
 
 export default function Customers() {
   const orders = [
@@ -95,7 +94,7 @@ export default function Customers() {
           </thead>
           <tbody>
             {orders.map((order, index) => (
-              <tr key={index} className={classNames({"bg-light": index % 2 === 0})}>
+              <tr key={index} className={{"bg-light": index % 2 === 0}}>
                 <td>
                   <div className="font-medium">{order.customer}</div>
                   <div className="d-none d-md-block text-muted">

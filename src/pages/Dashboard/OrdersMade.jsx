@@ -1,7 +1,7 @@
 import React from 'react';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, LabelList,
-  LineChart, Line, RadialBarChart, PolarAngleAxis, PieChart, Pie
+  LineChart, Line
 } from 'recharts';
 import 'bootstrap/dist/css/bootstrap.min.css';
 

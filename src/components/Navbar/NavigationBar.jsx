@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { FiSearch, FiBell, FiUser } from "react-icons/fi";
 import { AiOutlineMenu} from "react-icons/ai";
 import {  IconButton, TextField, InputAdornment } from "@mui/material";
